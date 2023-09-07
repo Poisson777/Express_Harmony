@@ -1,0 +1,33 @@
+<div class="container">
+    <div style="width : 100%; height : 45px;">
+        <image class="back" onclick="back()" src="common/images/ic_public_arrow_left.png"></image>
+    </div>
+    <div class="bg">
+        <div class="sendbg">
+           <text class="title" value="填写信息申请上门取件"></text>
+            <div class="button" onclick="showMenu">
+                <text class="text" style="font-size: 20px;">{{ProvinceText}}</text>
+            </div>
+            <menu id="apiMenu1" onselected="onMenuSelected">
+                <option for="{{data1}}" value="{{$idx}}">{{$item.Name}}</option>
+            </menu>
+            <div class="button2" onclick="showMenu2">
+                <text class="text" style="font-size: 20px;">{{CityText}}</text>
+            </div>
+            <menu id="apiMenu2" onselected="onMenuSelected2">
+                <option for="{{data2}}" value="{{$idx}}">{{$item.Name}}</option>
+            </menu>
+            <div class="button3" onclick="showMenu3">
+                <text class="text" style="font-size: 20px;">{{AreaText}}</text>
+            </div>
+            <menu id="apiMenu3" onselected="onMenuSelected3">
+                <option for="{{data3}}" value="{{$idx}}">{{$item.Name}}</option>
+            </menu>
+            <image class="jikuaidiImage" src='common/images/寄圆形.png'></image>
+            <textarea class="telText" placeholder="描述" onchange="change" value="{{teltext}}"></textarea>
+            <textarea class="posText" placeholder="请输入详细地址" onchange="change1" value="{{postext}}"></textarea>
+        </div>
+        <button class="btbg" value="寄！" onclick="send"></button>
+    </div>
+    
+</div>

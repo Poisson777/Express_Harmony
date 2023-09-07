@@ -1,0 +1,16 @@
+<div class="container">
+    <div style="width : 100%; height : 45px;">
+        <image class="back" onclick="back()" src="common/images/ic_public_arrow_left.png"></image>
+        <text class="title1">新增地址</text>
+    </div>
+    <div class="bg">
+        <div class="sendbg">
+            <image class="jikuaidiImage" src='common/images/地址圆形.png'></image>
+            <textarea class="nameText" placeholder="姓名" onchange="change" value="{{nametext}}"></textarea>
+            <textarea class="telText" placeholder="电话" onchange="change1" value="{{teltext}}"></textarea>
+            <textarea class="addText" placeholder="地址" onchange="change2" value="{{addtext}}"></textarea>
+        </div>
+        <button class="btbg" value="完成" onclick="send"></button>
+    </div>
+
+</div>

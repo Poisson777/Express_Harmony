@@ -1,0 +1,33 @@
+<div style="display : flex; flex-direction : column;">
+    <div style="width : 100%; height : 45px;">
+        <text class="login_entry" onclick="register()">注册</text>
+    </div>
+    <div style="background-color : #66A1AB;">
+        <image src="common/images/图片@1x.png">
+        </image>
+        <image class="image_icon" src="common/images/图片 2@1x.png">
+        </image>
+    </div>
+    <div class="input_display">
+        <input class="account_input"  value="{{account}}"placeholder="请输入账号" onchange="accountchange()"></input>
+        <input class="password_input" type="password"value="{{password}}"placeholder="请输入密码" onchange="passwordchange()"></input>
+        <div class="radio_div">
+            <input class="radio" type="radio" checked='true' name="radio" value="radio1" onchange="onRadioChange()">
+            </input>
+            <text class="radio_text">用户</text>
+            <input class="radio" type="radio" checked='false' name="radio" value="radio2" onchange="onRadioChange()">
+            </input>
+            <text class="radio_text">快递员</text>
+            <input class="radio" type="radio" checked='false' name="radio" value="radio3" onchange="onRadioChange()">
+            </input>
+            <text class="radio_text">管理员</text>
+        </div>
+        <button class="enter_button" type="capsule" onclick="enter()">登录</button>
+        <div class="about">
+            <text  onclick="about()">关于我们</text>
+        </div>
+        <div class="forget">
+            <text onclick="forget()">忘记密码</text>
+        </div>
+    </div>
+</div>

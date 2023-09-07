@@ -1,0 +1,5 @@
+<div class="container">
+    <toolbar class='toolbarContain' style="position: fixed; bottom: 0px; ">
+            <toolbar-item for="{{menus}}" class='toolbarItem' icon='{{cD==$idx?$item.path:$item.path1}}' value='{{$item.menu}}' onclick="GotoPages({{$idx}},{{uD}})"></toolbar-item>
+    </toolbar>
+</div>

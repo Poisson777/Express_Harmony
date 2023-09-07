@@ -1,0 +1,30 @@
+<element name="timg" src="../../../bottommenu/pages/topimage/topimage.hml"></element>
+<div class="container">
+    <stack class="stack-parent">
+        <timg class="topimage"></timg>
+        <div class="background"></div>
+        <div class="display_menu">
+            <div class="v_line"></div>
+            <div class="h_line"></div>
+            <div class="to_be_delivered menu" onclick="to_be_delivered()">
+                <image class="icon_image" src="common/images/ze-coupon-o.svg"></image>
+                <text class="icon_text">待派件</text>
+            </div>
+            <div class="sent menu" onclick="search_storehouse()">
+                <image class="icon_image" src="common/images/ze-wap-home.svg"></image>
+                <text class="icon_text">查询库</text>
+            </div>
+            <div class="to_be_send menu" onclick="help_send()">
+                <image class="icon_image" src="common/images/ze-records.svg"></image>
+                <text class="icon_text">代寄件</text>
+            </div>
+        </div>
+
+        <toolbar class='toolbarContain' style="position: fixed; bottom: 0px; ">
+            <toolbar-item class='toolbarItem' icon='common/images/邮件1.png' value='运单'></toolbar-item>
+            <toolbar-item class='toolbarItem' onclick="to_center()"icon='common/images/个人中心2.png' value='人员'></toolbar-item>
+        </toolbar>
+    </stack>
+
+
+</div>

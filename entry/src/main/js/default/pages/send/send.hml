@@ -1,0 +1,22 @@
+<div class="container">
+    <div>
+        <image class="back" onclick="back()" src="common/images/ic_public_arrow_left.png"></image>
+    </div>
+    <div class="bg">
+        <div class="sendbg">
+            <text class="title" value="填写信息申请上门取件"></text>
+            <image class="jikuaidiImage" src='common/images/寄圆形.png'></image>
+            <textarea class="nameText" placeholder="姓名" onchange="change0" value="{{nametext}}"></textarea>
+            <textarea class="telText" placeholder="联系电话" onchange="change" value="{{teltext}}"></textarea>
+            <textarea class="posText" placeholder="请输入寄出地址" onchange="change1" value="{{postext}}"></textarea>
+
+            <image class="shoukuaidiImage" src='common/images/收.png'></image>
+            <textarea class="nameText1" placeholder="姓名" onchange="change2" value="{{nametext2}}"></textarea>
+            <textarea class="telText1" placeholder="联系电话" onchange="change3" value="{{teltext2}}"></textarea>
+            <textarea class="posText1" placeholder="请输入收件地址" onchange="change4" value="{{postext2}}"></textarea>
+
+        </div>
+        <button class="btbg" value="{{text_button}}" onclick="send"></button>
+    </div>
+
+</div>

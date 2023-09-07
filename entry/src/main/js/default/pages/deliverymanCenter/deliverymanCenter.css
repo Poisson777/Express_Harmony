@@ -1,0 +1,54 @@
+.main_background {
+    background-image: url("common/images/个人中心背景.png");
+    height: 100%;
+    width: 100%;
+
+}
+.icon_user{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    background-color: antiquewhite;
+    top: 90px;
+    left: 140px;
+    border-radius: 35px;
+}
+.second_background{
+    top: 70px;
+    left: 18px;
+    border: 2px #1684FC;
+    width: 90%;
+    height: 200px;
+    background: linear-gradient(#D1E7FE,#ffffff);
+
+}
+.userName_text{
+    font-size: 25px;
+    left: 100px;
+    top: 45px;
+    font-weight: bold;
+}
+.btu{
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    border: 2px #E1E1E1;
+
+}
+.btu_text{
+    font-size: 20px;
+    left: 20px;
+    top: 5px;
+    width: 150px;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    image-size: 100%;
+    left: 10px;
+}
+.icon2{
+    height: 50px;
+    width: 50px;
+    left: 100px;
+}

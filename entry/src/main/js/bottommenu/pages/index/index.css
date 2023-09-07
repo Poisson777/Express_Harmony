@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 38px;
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    margin: 10px;
+}
+.bottommenu{
+    width: 100%;
+    height: 140px;
+    background-color: snow;
+    border-top: 10px solid black;
+    z-index: 999;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menubox{
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menutitle{
+    color: black;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.cing{
+    width: 100px;
+    height:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

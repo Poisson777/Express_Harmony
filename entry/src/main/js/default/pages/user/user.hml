@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="top">
+        <image class="topimage" src="common/images/轮播图2.png"></image>
+    </div>
+    <div class="center">
+        <div class="bg">
+            <div class="buttonbg">
+                <image class="jikuaidiImage" src='common/images/寄快递.png' onclick="GotoSend"></image>
+                <button class="jikuaidibt" value="寄快递" onclick="GotoSend"></button>
+            </div>
+        </div>
+        
+        <div class="textbg">
+            <text class="text1">{{companyId}}</text>
+            <text class="text2">{{companyIntro}}</text>
+            <text class="text3">{{companyContact}}</text>
+        </div>
+    </div>
+    <tlb c-D='0' u-D='{{uid}}'></tlb>
+</div>
+<element name="tlb" src="../../../bottommenu/pages/userToolbar/userToolbar.hml"></element>
+

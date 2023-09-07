@@ -1,0 +1,57 @@
+<div class="container">
+    <div style="width : 100%; height : 45px;">
+        <image class="back" onclick="back()" src="common/images/ic_public_arrow_left.png"></image>
+        <text class="title">个人详情</text>
+        <text class="topbt" onclick="GotoModify">修改</text>
+    </div>
+
+    <div class="btu_touxiang" style="top: 35px;">
+        <text class="btu_text">
+            头像
+        </text>
+        <image class="icon"  src="{{imageurl}}"></image>
+        <image class="icon1" src="common/images/右箭头.png"></image>
+    </div>
+    <div class="btu_id" style="top: 35px;">
+        <text class="btu_text2">
+            真实姓名
+        </text>
+        <text class="text1">{{realName}}</text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div>
+    <div class="btu_username" style="top: 35px;">
+        <text class="btu_text2">
+            昵称
+        </text>
+        <text class="text1">{{userName}}</text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div>
+    <div class="btu_sex" style="top: 35px;">
+        <text class="btu_text2">
+            身份证号
+        </text>
+        <text class="sextext">{{id}}</text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div>
+    <div class="btu_info" style="top: 35px;">
+        <text class="btu_text2">
+            个性签名
+        </text>
+        <text class="text1">{{info}}</text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div>
+    <div class="btu_mail" style="top: 35px;">
+        <text class="btu_text2">
+            邮箱地址
+        </text>
+        <text class="mailtext">{{email}}</text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div>
+    <div class="btu_mail" style="top: 35px;">
+        <text class="btu_text2">
+            电话
+        </text>
+        <text class="mailtext">{{phone}}</text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div>
+</div>

@@ -1,0 +1,69 @@
+ <div style="display : flex; flex-direction : column;">
+    <div class="topview"></div>
+        <text class="text1">运单详情</text>
+        <image class="image1" src="common/images/ic_public_arrow_left.png"></image>
+    <div class="contentview">
+        <div class="positon_info">
+            <label class="label1" >订单号:</label>
+            <text class="namebg">快件名称：{{name}}</text>
+            <text class="num_mail">{{number_mail}}</text>
+            <text class="from">{{from.substring(3,6)}}</text>
+            <text class="to">{{to.substring(3,6)}}</text>
+
+
+
+            <image class="image2" src="common/images/地点箭头.png"></image>
+
+            <text class="statebg">快件状态：{{state}}</text>
+        </div>
+        <div class="mail_info">
+            <div class="from_screen">
+                <image src="common/images/寄.png" class="icon"></image>
+                <text class="name">{{from_name}}</text>
+                <text class="phonenum">{{from_phonenum}}</text>
+                <textarea class="site">{{from_site}}</textarea>
+            </div>
+            <div class="to_screen">
+                <image src="common/images/收件.png" class="icon"></image>
+                <text class="name">{{to_name}}</text>
+                <text class="phonenum">{{to_phonenum}}</text>
+                <textarea class="site">{{to_site}}</textarea>
+            </div>
+            <text class="locabg">目前位置：{{now_location}}</text>
+            <picker class="mypicker" focusable="true" type="text" value="{{pos}}" range="{{posarr}}"
+                    show="{{myshow}}"onchange="setPos()" oncancel="cancel"></picker>
+            <button class="{{flag?'b2':'b1'}}" onclick="showDialog_expressman">确认收货</button>
+            <button class="{{flag_expressman?'b2':'b1'}}" onclick="showDialog_expressman">{{is_picked}}</button>
+        </div>
+
+    </div>
+     <dialog id="hintDialog" style="margin-bottom: 50%;">
+         <div class="dialog-div">
+             <div class="inner-txt">
+                 <text class="txt">提示</text>
+             </div>
+             <text class="text">请确认，收货后无法更改！！</text>
+             <div class="inner-btn">
+                 <button type="text" value="确定" onclick="confirmReceipt" class="btn-txt"></button>
+             </div>
+             <div class="inner-btn2">
+                 <button type="text" value="取消" onclick="hideDialog" class="btn-txt"></button>
+             </div>
+         </div>
+     </dialog>
+     <dialog id="hintDialog_expressman" style="margin-bottom: 50%;">
+         <div class="dialog-div">
+             <div class="inner-txt">
+                 <text class="txt">提示</text>
+             </div>
+             <text class="text">请确认，揽件后无法更改！！</text>
+             <div class="inner-btn">
+                 <button type="text" value="确认揽件" onclick="confirmReceipt_expressman" class="btn-txt"></button>
+             </div>
+             <div class="inner-btn2">
+                 <button type="text" value="取消" onclick="hideDialog" class="btn-txt"></button>
+             </div>
+         </div>
+     </dialog>
+
+</div>

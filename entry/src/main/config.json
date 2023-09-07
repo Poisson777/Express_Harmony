@@ -1,0 +1,134 @@
+{
+  "app": {
+    "vendor": "example",
+    "bundleName": "com.example.myapplication",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+    "default": {
+      "network": {
+        "cleartextTraffic": true
+      }
+    }
+  },
+  "module": {
+    "mainAbility": "com.example.myapplication.MainAbility",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "tv",
+      "wearable"
+    ],
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "visible": true,
+        "name": "com.example.myapplication.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "metaData": {
+      "customizeData": [
+        {
+          "extra": "",
+          "name": "hwc-theme",
+          "value": "androidhwext:style/Theme.Emui.NoTitleBar"
+        }
+      ]
+    },
+    "distro": {
+      "moduleType": "entry",
+      "installationFree": false,
+      "deliveryWithInstall": true,
+      "moduleName": "entry"
+    },
+    "package": "com.example.myapplication",
+    "name": ".MyApplication",
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/index_register/index_register",
+          "pages/forget_password/forget_password",
+          "pages/user/user",
+          "pages/manage/manage",
+          "pages/deliveryman/deliveryman",
+          "pages/userSearch/userSearch",
+          "pages/userCenter/userCenter",
+          "pages/deliverymanCenter/deliverymanCenter",
+          "pages/deliverymanServe/deliverymanServe",
+          "pages/YJtest/YJtest",
+          "pages/manage_center/manage_center",
+          "pages/userSend/userSend",
+          "pages/userCenterDetail/userCenterDetail",
+          "pages/addressBook/addressBook",
+          "pages/to_be_send/to_be_send",
+          "pages/addAddress/addAddress",
+          "pages/send/send",
+          "pages/mailDetail/mailDetail",
+          "pages/storemanage/storemanage",
+          "pages/deliveryMail/deliveryMail",
+          "pages/userModify/userModify",
+          "pages/deliverymanDoor/deliverymanDoor",
+          "pages/delivermanDetial/delivermanDetial",
+          "pages/deliverymanModify/deliverymanModify",
+          "pages/DoorPickup/DoorPickup",
+          "pages/photoModify/photoModify",
+          "pages/aboutUs/aboutUs",
+          "pages/help/help"
+
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": true
+        }
+      },
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/topimage/topimage",
+          "pages/userToolbar/userToolbar",
+          "pages/expressmanTool/expressmanTool"
+        ],
+        "name": "bottommenu",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": false
+        }
+      },
+      {
+        "pages": [
+          "pages/index/index"
+        ],
+        "name": "default1",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": false
+        }
+      }
+    ],
+    "reqPermissions": [
+      {
+        "reason": "",
+        "name": "ohos.permission.INTERNET"
+      }
+    ]
+  }
+}

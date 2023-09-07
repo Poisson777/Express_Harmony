@@ -1,0 +1,86 @@
+.container {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 0 5% 0;
+    background-color: #F7F8FA;
+}
+
+.title{
+    position: absolute;
+    font-size: 20px;
+    color: darkgrey;
+    left: 130px;
+    top: 10px;
+}
+
+.back{
+    position:absolute;
+    top:5px;
+    width:35px;
+    height:35px;
+}
+.color {
+    margin: 0 4% 0 4% ;
+    width: 92%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.title,.input-title,.message-title,.length-title {
+    width: 32%;
+    font-size: 20px;
+}
+.input-item {
+    width: 100%;
+}
+.input-title {
+    color: #121317;
+    font-family: HarmonyHeiTi;
+}
+.input {
+    width: 70%;
+}
+.bt{
+    position: absolute;
+    top: 350px;
+    width: 40%;
+    left:100px;
+    background: linear-gradient(#ffffff, #D1E7F9, #D1E7FE);
+    text-color: black;
+    height: 40px;
+    font-size: 25;
+    border: 1px solid;
+    border: darkgrey;
+}
+.dialog-div {
+    flex-direction: column;
+    align-items: center;
+}
+.inner-txt {
+    width: 80%;
+    height: 100px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.txt {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+}
+.text {
+    font-size: 16px;
+    left: 10px;
+}
+
+.inner-btn {
+    top:10px;
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+.inner-btn2 {
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+}

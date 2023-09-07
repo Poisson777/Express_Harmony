@@ -1,0 +1,14 @@
+<div class="container">
+    <div style="width : 100%; height : 45px;">
+        <image class="back" onclick="back()" src="common/images/ic_public_arrow_left.png"></image>
+        <text class="title">快件详情</text>
+    </div>
+    <div class="textbg">
+        <text  class="id">{{id}}</text>
+        <text  class="from">{{from}}</text>
+        <text  class="to">{{to}}</text>
+        <image class="icon" src="common/images/地点箭头.png"></image>
+
+        <divider dashed="true" class="divider" vertical="false" style="position:absolute;top:90px"></divider>
+    </div>
+</div>

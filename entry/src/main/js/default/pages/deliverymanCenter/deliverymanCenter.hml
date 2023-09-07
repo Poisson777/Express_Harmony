@@ -1,0 +1,53 @@
+<div class="main_background" style="display : flex; flex-direction : column;" >
+    <div style="width: 100%;height: 50px;background-color: #FFFFFF;top: 20px;">
+
+    </div>
+
+    
+    <div class="second_background">
+        <text class="userName_text">
+            {{userName}}
+        </text>
+        <text style="top: 110px;left: -20px;">{{number_finished}}</text>
+        <text style="top: 110px;left: 50px;">{{number_unfinished}}</text>
+        <label style="position: absolute;top: 140px;left:55px;font-size: 20px;">揽件数目</label>
+        <label style="position: absolute;top: 140px;left:150px;font-size: 20px;">已完成数目</label>
+    </div>
+
+    <image class="icon_user"></image>
+    
+
+    <div onclick="torch1" class="btu"  style="top: 130px;">
+        <image class="icon"  src="common/images/个人icon.png"></image>
+        <text class="btu_text">
+            查看个人信息
+        </text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div>
+    <div onclick="torch1" class="btu" style="top: 130px;">
+        <image class="icon"  src="common/images/关于我们icon.png"></image>
+        <text class="btu_text">
+            关于我们
+        </text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div>
+    <div onclick="torch1" class="btu" style="top: 130px;">
+        <image class="icon"  src="common/images/帮助icon.png"></image>
+        <text class="btu_text">
+            帮助
+        </text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div>
+    <div onclick="torch2" class="btu" style="top: 130px;">
+        <image class="icon"  src="common/images/帮助icon.png"></image>
+        <text class="btu_text">
+            退出登录
+        </text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div>
+
+
+
+    <tlb c-D='2' u-D='{{mid}}'></tlb>
+</div>
+<element name="tlb" src="../../../bottommenu/pages/expressmanTool/expressmanTool.hml"></element>

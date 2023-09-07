@@ -1,0 +1,16 @@
+<div class="container">
+    <div style="width : 100%; height : 45px;">
+        <image class="back" onclick="back()" src="common/images/ic_public_arrow_left.png"></image>
+        <text class="title">地址簿</text>
+    </div>
+
+    <div for="{{address}}" class="btu_id" style="top: 35px;">
+        <text class="btu_text2">
+            {{$item.name}}
+        </text>
+        <text class="text1">{{$item.tel}}</text>
+        <text class="text2">{{$item.add}}</text>
+        <image class="icon2" src="common/images/修改.svg"></image>
+    </div>
+    <button class="addbt" onclick="GotoAdd">新增地址</button>
+</div>

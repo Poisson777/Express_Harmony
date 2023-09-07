@@ -1,0 +1,140 @@
+.image_icon{
+    position:absolute;
+    left: 5%;
+    top: 0px;
+    z-index:2;
+    width: 129px;
+    height: 89px
+}
+.container{
+    position: absolute;
+    top: 23%;
+    width: 100%;
+    height: 100%;
+    background-color:#ABBDFB;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+
+}
+.selector{
+    position: absolute;
+    left: 50px;
+    top:30px;
+    width: 250px;
+    height: 50px;
+
+    background-color: #ffffff;
+
+}
+.second_background{
+    position: absolute;
+    top: 150px;
+    left: 15px;
+    height: 300px;
+    width: 300px;
+background-color: #ffffff;
+
+    background-size: 99%;
+    border-radius: 25px;
+}
+.background_image{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+
+
+}
+
+.btnsend{
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    background-image: url("common/images/查快递.png");
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.btnscan{
+    position: absolute;
+    left: 160px;
+    top: 20px;
+    background-image: url("common/images/上门取件.png");
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.btncheck{
+    position: absolute;
+    left: 15px;
+    top: 160px;
+    background-image: url("common/images/查快递.png");
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.site_icon{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 15px;
+    top: 10px;
+}
+.label1{
+    position: absolute;
+    font-size:20px;
+    left: 50px;
+    top: 15px;
+}
+
+.sendbg{
+    position: absolute;
+    top:10px;
+
+    width: 100%;
+    height: 15%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid ;
+    border: darkgrey;
+
+}
+
+
+.button {
+    position: absolute;
+    top: 50px;
+    left:5px;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    background-color: #DCDCDC;
+    border-radius: 40px;
+}
+.button2{
+    position: absolute;
+    top: 50px;
+    left:105px;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    background-color: #DCDCDC;
+    border-radius: 40px;
+}
+.button3{
+    position: absolute;
+    top: 50px;
+    left:205px;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    background-color: #DCDCDC;
+    border-radius: 40px;
+}

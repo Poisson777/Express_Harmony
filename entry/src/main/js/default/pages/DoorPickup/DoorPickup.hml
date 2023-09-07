@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="top" style="width : 100%; height : 45px;">
+        <image class="back" onclick="back" src="common/images/ic_public_arrow_left.png"></image>
+        <text class="title">我的上门取件</text>
+    </div>
+    <div  class="contentview">
+        <list  class="listview">
+            <block  for="{{pagelists}}">
+                <list-item  class="listitem">
+                    <text  class="id">{{$item.id}}</text>
+                    <text  class="from">上门地址：{{$item.from}}</text>
+                    <text  class="to">内容描述：{{$item.to}}</text>
+                    <text  class="status">请求状态：{{$item.status}}</text>
+                    <button class="{{$item.status=='isAccept'||$item.status=='accept'?'detail':'detail2'}}" type="capsule" onclick="showDialog({{$item.id}},{{$idx}})">取消请求</button>
+                </list-item>
+            </block>
+            <list-item>
+                <div  class="{{flag?'lastview1':'lastview'}}" disabled="{{flag}}"  onclick="loaddata">
+                    <text  class="tv1">{{text}}</text>
+                </div>
+            </list-item>
+        </list>
+    </div>
+
+    <dialog id="hintDialog" style="margin-bottom: 50%;">
+        <div class="dialog-div">
+            <div class="inner-txt">
+                <text class="txt">提示</text>
+            </div>
+            <text class="text">是否确认取消该请求</text>
+            <div class="inner-btn">
+                <button type="text" value="确定" onclick="detailsearch" class="btn-txt"></button>
+            </div>
+            <div class="inner-btn2">
+                <button type="text" value="取消" onclick="hideDialog" class="btn-txt"></button>
+            </div>
+        </div>
+    </dialog>
+</div>

@@ -1,0 +1,34 @@
+<div class="container">
+    <div  class="topview">
+        <div class="top1">
+            <input id="input1" class="input" type="text" placeholder="请输入订单号"onchange="changetrack">
+
+            </input>
+            <button class="btu1" onclick="search">搜索
+
+            </button>
+        </div>
+    </div>
+    <div  class="contentview">
+        <list  class="listview">
+            <block  for="{{pagelists}}">
+                <list-item  class="listitem">
+                    <text  class="id">{{$item.id}}</text>
+                    <text  class="from">{{$item.from}}</text>
+                    <text  class="to">{{$item.to}}</text>
+                    <image class="icon" src="common/images/地点箭头.png"></image>
+                    <button class="detail" type="capsule" onclick="detailsearch({{$item.id}})">查看详情</button>
+                </list-item>
+            </block>
+            <list-item>
+                <div  class="{{flag?'lastview1':'lastview'}}" disabled="{{flag}}"  onclick="loaddata">
+                    <text  class="tv1">{{text}}</text>
+                </div>
+            </list-item>
+        </list>
+    </div>
+
+    <div  class="bottomview">
+
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<element name="timg" src="../../../bottommenu/pages/topimage/topimage.hml"></element>
+<div class="container">
+    <stack>
+        <timg class="topimage"></timg>
+        <div class="background"></div>
+        <div class="display_menu">
+            <list class="listview">
+                <block for="{{ pagelists }}">
+                <list-item  class="listItem">
+                        <image class="listicon" src="common/images/ze-friends-o Copy.svg"></image>
+                        <div class="name">
+                            <text class="text">姓名：</text>
+                            <text class="text">{{ $item.name }}</text>
+                        </div>
+                        <div class="post">
+                            <text class="text">职位：</text>
+                            <text class="text">{{ $item.post }}</text>
+                        </div>
+                        <div class="age">
+                            <text class="text">年龄：</text>
+                            <text class="text">{{ $item.age }}</text>
+                        </div>
+                </list-item></block>
+            </list>
+        </div>
+        <toolbar class='toolbarContain' style="position : fixed; bottom : 0px;">
+            <toolbar-item class='toolbarItem' onclick="to_sent()" icon='common/images/邮件2.png' value='运单'>
+            </toolbar-item>
+            <toolbar-item class='toolbarItem' icon='common/images/个人中心1.png' value='人员'></toolbar-item>
+        </toolbar>
+    </stack>
+</div>

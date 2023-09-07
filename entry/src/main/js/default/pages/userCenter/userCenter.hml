@@ -1,0 +1,59 @@
+<div class="main_background" style="display : flex; flex-direction : column;" >
+    <div style="width: 100%;height: 50px;background-color: #FFFFFF;top: 20px;">
+
+    </div>
+
+
+    <div class="second_background">
+        <text class="userName_text">
+            {{userName}}
+        </text>
+        <text style="top: 110px;left: -15px;">{{number_finished}}</text>
+        <text style="top: 110px;left: 85px;">{{number_unfinished}}</text>
+        <label style="position: absolute;top: 140px;left:55px;font-size: 20px;">寄件数</label>
+        <label style="position: absolute;top: 140px;left:180px;font-size: 20px;">收件数</label>
+    </div>
+
+    <image class="icon_user" src="{{imageurl}}"></image>
+
+    <div onclick="GotoAddress" class="btu" style="top: 115px;">
+        <image class="icon"  src="common/images/网点icon.png"></image>
+        <text class="btu_text">
+            头像修改
+        </text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div>
+    <div onclick="GotoDetail" class="btu"  style="top: 115px;">
+        <image class="icon"  src="common/images/个人icon.png" ></image>
+        <text class="btu_text" >
+            查看个人信息
+        </text>
+        <image class="icon2" src="common/images/右箭头.png" ></image>
+    </div>
+    <div onclick="GotoAboutUs" class="btu" style="top: 125px;">
+        <image class="icon"  src="common/images/关于我们icon.png"></image>
+        <text class="btu_text">
+            关于我们
+        </text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div>
+    <!--<div onclick="torch1" class="btu" style="top: 125px;">
+        <image class="icon"  src="common/images/帮助icon.png"></image>
+        <text class="btu_text">
+            帮助
+        </text>
+        <image class="icon2" src="common/images/右箭头.png"></image>
+    </div> -->
+
+    <div onclick="exit" class="btu" style="top: 150px;">
+        <text class="btu_text" style="left: 130px;margin-top: 8px;">
+            退出登录
+        </text>
+    </div>
+
+
+
+    <tlb c-D='2' u-D='{{uid}}'></tlb>
+</div>
+
+<element name="tlb" src="../../../bottommenu/pages/userToolbar/userToolbar.hml"></element>

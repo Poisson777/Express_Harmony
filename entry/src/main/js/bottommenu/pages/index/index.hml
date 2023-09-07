@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="bottommenu">
+        <div for="{{menus}}"  class="menubox" onclick="changemenu{{$idx}}">
+            <image src="{{currentdata==$idx?$item.path:$item.path1}}" class="cing"></image>
+            <text class="menutitle">{{$item.menu}}</text>
+        </div>
+    </div>    
+</div>

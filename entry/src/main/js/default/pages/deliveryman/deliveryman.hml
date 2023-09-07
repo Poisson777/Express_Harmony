@@ -1,0 +1,58 @@
+<div style="display : flex; flex-direction : column;">
+
+    <div style="background-color : #66A1AB;">
+        <image src="common/images/图片@1x.png">
+        </image>
+        <image class="image_icon" src="common/images/图片 2@1x.png">
+        </image>
+    </div>
+    <div class="container">
+
+        <div class="sendbg">
+
+            <div class="button" onclick="showMenu">
+                <text class="text" style="font-size: 20px;">{{ProvinceText}}</text>
+            </div>
+            <menu id="apiMenu1" onselected="onMenuSelected">
+                <option for="{{data1}}" value="{{$idx}}">{{$item.Name}}</option>
+            </menu>
+            <div class="button2" onclick="showMenu2">
+                <text class="text" style="font-size: 20px;">{{CityText}}</text>
+            </div>
+            <menu id="apiMenu2" onselected="onMenuSelected2">
+                <option for="{{data2}}" value="{{$idx}}">{{$item.Name}}</option>
+            </menu>
+            <div class="button3" onclick="showMenu3">
+                <text class="text" style="font-size: 20px;">{{AreaText}}</text>
+            </div>
+            <menu id="apiMenu3" onselected="onMenuSelected3">
+                <option for="{{data3}}" value="{{$idx}}">{{$item.Name}}</option>
+            </menu>
+            <image class="site_icon" src="common/images/网点icon2.png"></image>
+            <label class="label1">请选择网点：</label>
+        </div>
+
+        <div class="second_background">
+            <image class="background_image" src="common/images/选择背景框2.png"></image>
+
+
+
+
+            <button class="btnscan" onclick="to_door()">
+            </button>
+            <button class="btnsend" onclick="to_search()">
+
+            </button>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <tlb c-D='0' u-D='{{mid}}'></tlb>
+</div>
+<element name="tlb" src="../../../bottommenu/pages/expressmanTool/expressmanTool.hml"></element>

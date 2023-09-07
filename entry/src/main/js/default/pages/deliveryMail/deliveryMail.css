@@ -1,0 +1,235 @@
+.topview{
+    height: 10%;
+    width: 100%;
+
+}
+
+.contentview{
+    height: 90%;
+    width: 100%;
+    background-image: url("common/images/mailBackbround.png");
+}
+.text1{
+    position: absolute;
+    left: 70px;
+    top: 20px;
+    font-size: 30px;
+}
+.image1{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 9px;
+}
+
+.positon_info{
+    width:90%;
+    height: 20%;
+    background-color: #ffffff;
+    top: 70px;
+    left: 17px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px 0px;
+
+}
+.label1{
+    height: 30px;
+    position: absolute;
+    font-size: 20px;
+    top: 5px;
+}
+.num_mail{
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    top: 5px;
+    left: 65px;
+    position: absolute;
+
+}
+.from{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.to{
+    position: absolute;
+    top: 40px;
+    left: 175px;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+}
+.image2{
+    width: 50px;
+    height: 20px;
+    position: absolute;
+    top: 55px;
+    left: 120px;
+
+}
+.mail_info {
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: gray;
+
+    left: 5%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.from_screen{
+    width: 100%;
+    height: 35%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: absolute;
+    border-style: dashed;
+}
+.icon{
+    height: 70px;
+    width: 70px;
+    top: 17px;
+    left: 10px;
+    position: absolute;
+}
+.to_screen{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top: 90px;
+    border-style: dashed;
+    border-width: 1px;
+}
+.express_screen{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top: 180px;
+}
+.name{
+    position: absolute ;
+    top:10px;
+    left:100px;
+    font-weight: bold;
+    font-size:20px;
+}
+.phonenum{
+    position: absolute;
+    top:14px;
+    font-size: 16px;
+    left:160px;
+    color:gray;
+}
+.site{
+    position: absolute;
+    color:gray;
+    font-size: 16px;
+    top:39px;
+    left:80px;
+    background-color: #ffffff;
+    width: 200px;
+    height: 60px;
+
+}
+.name2{
+    position: absolute ;
+    top:20px;
+    left:100px;
+    font-weight: bold;
+    font-size:020px;
+}
+.phonenum2{
+    position: absolute;
+    top:24px;
+    font-size: 16px;
+    left:160px;
+    color:gray;
+}
+.statebg{
+    position: absolute;
+    top:90px;
+    left:80px;
+    font-size: 16px;
+    color: yellowgreen;
+}
+.namebg{
+    position: absolute;
+    top:10px;
+    left:100px;
+    font-size: 16px;
+    color: steelblue;
+}
+.b1{
+    position: absolute;
+    top:240px;
+    text-align: center;
+    font-size: 14px;
+    width: 240px;
+    height: 36px;
+    left:25px
+}
+.b2{
+    visibility: hidden;
+}
+.mypicker{
+
+    position: absolute;
+    top:240px;
+    text-align: center;
+    font-size: 14px;
+    border-width: 2px;
+    border-radius: 15px;
+    width: 240px;
+    height: 36px;
+    left:25px
+}
+.locabg{
+    position: absolute;
+    top:200px;
+    left:30px;
+    font-size: 15px;
+    color: steelblue;
+}
+.dialog-div {
+    flex-direction: column;
+    align-items: center;
+}
+.inner-txt {
+    width: 80%;
+    height: 100px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.txt {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+}
+.text {
+    font-size: 16px;
+    left: 10px;
+}
+
+.inner-btn {
+    top:10px;
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+.inner-btn2 {
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+}

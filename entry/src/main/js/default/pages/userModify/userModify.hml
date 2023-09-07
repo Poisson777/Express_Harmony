@@ -1,0 +1,59 @@
+<div class="container">
+    <div style="width : 100%; height : 45px;">
+        <image class="back" onclick="back()" src="common/images/ic_public_arrow_left.png"></image>
+        <text class="title">修改信息</text>
+    </div>
+    <div class="input-item">
+        <div class="color">
+            <text class="input-title">昵称</text>
+            <input class="input" type="text" placeholder="{{userName}}" onchange="changeNick"></input>
+        </div>
+    </div>
+    <div class="input-item">
+        <div class="color">
+            <text class="input-title">真实姓名</text>
+            <input class="input" type="text" placeholder="{{realName}}" onchange="changeReal"></input>
+        </div>
+    </div>
+    <div class="input-item">
+        <div class="color">
+            <text class="input-title">个性签名</text>
+            <input class="input" type="text" placeholder="{{info}}" onchange="changeInfo"></input>
+        </div>
+    </div>
+    <div class="input-item">
+        <div class="color">
+            <text class="input-title">身份证号</text>
+            <input class="input" type="number" maxlength="18" placeholder="{{id}}" onchange="changeId"></input>
+        </div>
+    </div>
+    <div class="input-item">
+        <div class="color">
+            <text class="input-title">邮箱</text>
+            <input class="input" type="email" placeholder="{{email}}" onchange="changeEmail"></input>
+        </div>
+    </div>
+    <div class="input-item">
+        <div class="color">
+            <text class="input-title">电话</text>
+            <input class="input" type="number" maxlength="11" placeholder="{{phone}}" onchange="changePhone"></input>
+        </div>
+    </div>
+
+    <button class="bt" onclick="showDialog">保存</button>
+
+    <dialog id="hintDialog" style="margin-bottom: 50%;">
+        <div class="dialog-div">
+            <div class="inner-txt">
+                <text class="txt">提示</text>
+            </div>
+            <text class="text">是否确认修改个人信息</text>
+            <div class="inner-btn">
+                <button type="text" value="确定" onclick="messageSave" class="btn-txt"></button>
+            </div>
+            <div class="inner-btn2">
+                <button type="text" value="取消" onclick="hideDialog" class="btn-txt"></button>
+            </div>
+        </div>
+    </dialog>
+</div>

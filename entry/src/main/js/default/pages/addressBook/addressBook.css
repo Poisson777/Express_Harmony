@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.title{
+    position: absolute;
+    font-size: 20px;
+    color: darkgrey;
+    left: 130px;
+    top: 10px;
+}
+.btu_text2{
+    font-size: 20px;
+    left: 20px;
+    width: 150px;
+}
+.back{
+    position:absolute;
+    top:5px;
+    width:35px;
+    height:35px;
+}
+
+.btu_id{
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    border: 2px #E1E1E1;
+}
+
+.icon{
+    top: 5px;
+    object-fit: cover;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 220px;
+    border-radius: 35px;
+
+}
+.icon2{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right:2px;
+    top:15px;
+}
+.text1{
+    position: absolute;
+    font-size: 17px;
+    top: 5px;
+    left: 130px;
+    color: darkgray;
+}
+.text2{
+    position: absolute;
+    font-size: 17px;
+    left: 20px;
+    width: 100%;
+    top: 30px;
+    color: darkgray;
+}
+
+.icon1{
+    top: 15px;
+    height: 50px;
+    width: 50px;
+    left: 150px;
+}
+.addbt{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    border-radius: 0px;
+    background-color: rgba(209, 231, 254, 1);
+    color: rgba(16, 16, 16, 1);
+    font-size: 20px;
+}

@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.title{
+    position: absolute;
+    font-size: 20px;
+    color: darkgrey;
+    left: 130px;
+    top: 10px;
+}
+
+.back{
+    position:absolute;
+    top:5px;
+    width:35px;
+    height:35px;
+}
+.textbg{
+    position: absolute;
+    top:50px;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid ;
+    border: darkgrey;
+}
+.id{
+    position: absolute;
+    left:20px;
+    top:10px;
+    font-size: 16px;
+}
+.icon{
+    width:70px;
+    height:28px;
+    left:-20px;
+    top:50px;
+}
+.from{
+    font-size: 28px;;
+    left:20px;
+    top: 50px;
+}
+.to{
+    top: 50px;
+    left:120px;
+    font-size: 28px;
+}
+.divider {
+    margin: 10px;
+    color: #ff0000ff;
+    stroke-width: 1px;
+    line-cap: round;
+}

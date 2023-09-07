@@ -1,0 +1,31 @@
+<div style="display : flex; flex-direction : column;">
+    <div class="topview"></div>
+    <text class="text1">运单详情</text>
+    <image class="image1" src="common/images/ic_public_arrow_left.png"></image>
+    <div class="contentview">
+        <div class="positon_info">
+            <label class="label1" >订单号:</label>
+            <text class="num_mail">{{number_mail}}</text>
+            <text class="from">{{from}}</text>
+            <text class="to">{{to}}</text>
+            <image class="image2" src="common/images/地点箭头.png"></image>
+        </div>
+        <div class="mail_info">
+            <div class="from_screen">
+                <image src="common/images/寄.png" class="icon"></image>
+                <text class="name">{{from_name}}</text>
+                <text class="phonenum">{{from_phonenum}}</text>
+                <text class="site">{{from_site}}</text>
+            </div>
+            <div class="to_screen">
+                <image src="common/images/收件.png" class="icon"></image>
+                <text class="name">{{to_name}}</text>
+                <text class="phonenum">{{to_phonenum}}</text>
+                <text class="site">{{to_site}}</text>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

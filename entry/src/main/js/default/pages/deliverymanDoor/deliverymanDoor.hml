@@ -1,0 +1,35 @@
+<div class="container">
+    <div  class="topview">
+
+        <div class="top2">
+            <button id="btu1" class="btu2" style="text-color: {{text1}};background-color: {{background1}};" onclick="search_waitPick">待接单</button>
+            <button id="btu2" class="btu2" style="text-color:{{text2}};background-color: {{background2}};" onclick="search_Picked">已接单</button>
+
+        </div>
+    </div>
+    <div  class="contentview">
+        <list  class="listview">
+            <block  for="{{pagelists}}">
+                <list-item  class="listitem">
+                    <label class="label1">订单号：</label>
+                    <text  class="id">{{$item.request_id}}</text>
+                    <label class="label2"> 订单地址：</label>
+                    <textarea  class="from">{{$item.location+$item.address}}</textarea>
+                    <text  class="to">{{$item.time}}</text>
+
+
+                    <input type="button" class="detail" value="{{lanjian }}" onclick="torch({{$item}})" ></input>
+                </list-item>
+            </block>
+            <list-item>
+                <div  class="{{flag?'lastview1':'lastview'}}" disabled="{{flag}}"  onclick="loaddata">
+                    <text  class="tv1">{{text}}</text>
+                </div>
+            </list-item>
+        </list>
+    </div>
+
+    <div  class="bottomview">
+
+    </div>
+</div>

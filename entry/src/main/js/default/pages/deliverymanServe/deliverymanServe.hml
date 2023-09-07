@@ -1,0 +1,43 @@
+<div class="container">
+   <div  class="topview">
+      <div class="top1">
+         <input  class="input" type="text" placeholder="请输入所要搜索的订单号:"onchange="changetrack">
+
+         </input>
+         <button class="btu1" onclick="search">搜索
+
+         </button>
+      </div>
+      <div class="top2">
+         <button id="btu1" class="btu2" style="text-color:{{text1}};background-color: {{background1}};" onclick="search_waitPick">待揽件</button>
+         <button id="btu2" class="btu2" style="text-color: {{text2}};background-color: {{background2}};" onclick="search_Picked">已揽件</button>
+
+      </div>
+   </div>
+   <div  class="contentview">
+      <list  class="listview">
+         <block  for="{{pagelists}}">
+            <list-item  class="listitem">
+               <label class="text">订单号:</label>
+               <text  class="id">{{$item.eid}}</text>
+               <text  class="from">{{$item.from_location.substring(3,6)}}</text>
+               <text  class="to">{{$item.to_location.substring(3,6)}}</text>
+               <image class="icon" src="common/images/地点箭头.png"></image>
+               <input type="button" class="detail" value="{{lanjian }}" onclick="torch({{$item.eid}})" ></input>
+            </list-item>
+         </block>
+         <list-item>
+            <div  class="{{flag?'lastview1':'lastview'}}" disabled="{{flag}}"  onclick="loaddata">
+               <text  class="tv1">{{text}}</text>
+            </div>
+         </list-item>
+      </list>
+   </div>
+
+   <div  class="bottomview">
+
+   </div>
+
+   <tlb c-D='1' u-D='{{mid}}'></tlb>
+</div>
+<element name="tlb" src="../../../bottommenu/pages/expressmanTool/expressmanTool.hml"></element>
